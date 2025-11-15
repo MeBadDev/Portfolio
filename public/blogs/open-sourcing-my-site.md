@@ -21,7 +21,6 @@ The repository contains the full source code of my website, including:
 - A pixelated look
 - And of course, a messy codebase that I'm planning to refactor soon
 
-It's licensed under the MIT License, so you can use it freely for personal or commercial projects.
 Hope you find it useful!
 
 ## How to run it locally?
