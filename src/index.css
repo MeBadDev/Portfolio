@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); /*i'm sorry :( */
+@import "tailwindcss";
+
+:root {
+  --primary-stripe-rgb: 54 116 181;
+  --secondary-stripe-rgb: 87 143 202;
+  
+}
+@theme {
+  --default-font-family: "Jersey 10"
+}
+/* New letter pop-in animation */
+@keyframes letterPopIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* New keyframes for repeated pop cycle with a pause */
+@keyframes letterPopCycle {
+  0%, 70%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Combine initial popIn + repeated cycle with added pause */
+.animate-letter-pop {
+  animation:
+    letterPopIn 0.5s ease-in forwards,
+    letterPopCycle 2s ease-in-out infinite 0.5s;
+}
+
+@keyframes pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
+.text-shadow-lg {
+  
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+}
+
+.text-shadow-md {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+.text-shadow-sm {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+html {
+  margin: 0;
+}
+
+img {
+  image-rendering: pixelated;
+}

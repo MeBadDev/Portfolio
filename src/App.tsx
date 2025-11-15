@@ -1,0 +1,37 @@
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import FirstPanel from './components/FirstPanel';
+import SecondPanel from './components/SecondPanel';
+import ThirdPanel from './components/ThirdPanel';
+import Footer from './components/Footer';
+import BlogsPage from './pages/BlogsPage';
+import Topbar from './components/Topbar';
+import NotFoundPage from './pages/404';
+
+function HomePage() {
+  return (
+    <>
+      <Topbar />
+      {/* <ParallaxProvider> */}
+        <FirstPanel />
+        <SecondPanel />
+        <ThirdPanel />
+        <Footer />
+      {/* </ParallaxProvider> */}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blogs" element={<><Topbar /><BlogsPage /></>} />
+        <Route path="/404" element={<NotFoundPage />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
+      </Routes>
+    </HashRouter>
+  );
+}
+
+export default App;
