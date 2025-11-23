@@ -20,7 +20,7 @@ One day, for absolutely no reason, I decided to copy and paste random elements f
 
 To my surprise, it worked. I sent a button to a friend and confused them so much that I kept going. I started pasting random HTML elements: marquees, animated div that fills up the whole screen and even `<script>` tags that reloaded the page and kicked people out of the meeting. It made the endless online classes way more entertaining.
 
-I'm still quite surprised that it worked at all. To those unfamiliar with web development, I basically exploited a dangerous vulnerability called Cross-Site Scripting (XSS). I literally could have steal everyone's Google account if I knew what I was doing. Thankfully, I was just a kid who can't tell the difference between HTML and HDMI.
+To this day, I'm still quite surprised that it worked. To those unfamiliar with web development, I basically exploited a dangerous vulnerability called Cross-Site Scripting (XSS). I literally could have steal everyone's Google account if I knew what I was doing. Thankfully, I was just a kid who can't tell the difference between HTML and HDMI.
 
 That was my first real interaction with code.
 
