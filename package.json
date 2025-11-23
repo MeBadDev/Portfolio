@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "node scripts/generate-blog-manifest.cjs",
+    "predev": "bun scripts/generate-blog-manifest.cjs",
     "dev": "vite --host",
     "prebuild": "echo prebuild",
-    "build": "tsc -b && vite build && node scripts/generate-rss.cjs && node scripts/generate-blog-manifest.cjs && node scripts/generate-blog-html.cjs",
+    "build": "tsc -b && vite build && bun scripts/generate-rss.cjs && bun scripts/generate-blog-manifest.cjs && bun scripts/generate-blog-html.cjs",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-blog": "node scripts/generate-blog-md.cjs"
+    "generate-blog": "bun scripts/generate-blog-md.cjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
