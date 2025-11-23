@@ -2,7 +2,7 @@
 title: How breaking Google Meet classes got me into coding
 description: My coding journey started with an accidental exploit in Google Meet during the pandemic. This is the story of how that led me to programming.
 date: "2025-11-23"
-unix_time: 1763898664
+unix_time: 1763902402
 tags: ["personal"]
 ---
 ###### Written on 2025 November 23
