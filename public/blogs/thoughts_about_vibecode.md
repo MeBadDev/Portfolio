@@ -2,7 +2,7 @@
 title: Vibe Coding from a High Schooler's Perspective
 id: thoughts_about_vibecode
 description: LLMs became a thing my 3rd year of self-learning. I'm quite lucky to have experienced both sides of the coin, coding with and without AI assistance. Here are my thoughts on "vibe coding" and its implications for future developers.
-tags: opinion, no-code, ai
+tags: opinion,ai
 date: 2025-11-10
 unix_time: 1762781688
 ---
