@@ -1,5 +1,5 @@
 ---
-title: Building CipherFS: A really simple link and file sharing system
+title: Building CipherFS - A really simple link and file sharing system
 description: I can't believe the best way to share simple links and files is still typing long URLs or using Google Drive. So I built CipherFS.
 date: "2025-12-07"
 unix_time: 1765101436
