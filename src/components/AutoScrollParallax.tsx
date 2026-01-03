@@ -1,8 +1,7 @@
 import { useEffect, useRef } from 'react';
 const parallaxLayers = [
-  // { src: "/parallax-background/sky.png", speed: 0, zIndex: 0, offset: 0 },
   { src: "/parallax-background/clouds_bg.png", speed: 30, zIndex: 1, offset: 0 },
-  { src: "/parallax-background/glacial_mountains.png", speed: 60, zIndex: 30, offset: 100 }, // Adjusted zIndex
+  { src: "/parallax-background/glacial_mountains.png", speed: 60, zIndex: 30, offset: 100 }, 
   { src: "/parallax-background/clouds_mg_1.png", speed: 50, zIndex: 31, offset: 0 },
   { src: "/parallax-background/clouds_mg_2.png", speed: 80, zIndex: 32, offset: 0 },
   { src: "/parallax-background/clouds_mg_3.png", speed: 160, zIndex: 33, offset: 0 },

@@ -5,7 +5,6 @@ date: "2025-11-23"
 unix_time: 1763902402
 tags: ["personal", "story"]
 ---
-###### Written on 2025 November 23
 
 Coding has been an exciting part of my life. I've learned a lot about computers, hacked together some little projects, and met some great people along the way. Here's my story of how I got started with coding.
 

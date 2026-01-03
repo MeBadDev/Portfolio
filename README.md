@@ -24,6 +24,5 @@ convert markdown files to HTML, and generate the RSS feed.
 - Add a project showcase page
 - Refactor the codebase because it's ugly
 - Add comments to blog posts
-- Allow previewing blog posts without building the entire site
 - Add some small hidden games? idk
 - Figure out how to add dark mode without breaking the style

@@ -5,7 +5,6 @@ description: 10 months after launching my redesigned website, I finally implemen
 tags: devlog, technical
 date: 2025-11-09
 ---
-###### Written on 2025 November 9
 
 It's been nearly a year since my last blog post! Time flies, huh?
 

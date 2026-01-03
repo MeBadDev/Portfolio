@@ -5,7 +5,6 @@ date: "2025-11-15"
 unix_time: 1763180451
 tags: ["devlog"]
 ---
-###### Written on 2025 November 15
 
 I've open sourced the code for this website! You can find the repository [here](https://github.com/mebaddev/portfolio).
 

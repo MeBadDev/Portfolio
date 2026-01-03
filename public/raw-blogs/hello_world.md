@@ -5,7 +5,6 @@ description: The very first post on this website, this post showcases every Mark
 tags: testing, markdown
 date: 2024-09-08
 ---
-###### Written on 2024 September 8
 I am pretty bored so I began to work on a system that allows me to write markdown and have them compiled into HTML on build. This allows me to write articles/post with rich format in a relatively simple way.
 
 ## Why don't you just use HTML?

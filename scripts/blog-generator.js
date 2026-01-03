@@ -90,7 +90,7 @@ export function generateManifest(entries) {
 }
 
 export function generateBlogHTML(entry, cssLinks = []) {
-  const { title, description, slug, raw } = entry;
+  const { title, description, slug, raw, date } = entry;
   
   const markdownCss = fs.readFileSync(MARKDOWN_CSS_PATH, 'utf8');
   const highlightCss = fs.readFileSync(HIGHLIGHT_CSS_PATH, 'utf8');
@@ -100,6 +100,12 @@ export function generateBlogHTML(entry, cssLinks = []) {
   
   const body = stripFrontMatter(raw);
   const content = marked.parse(body);
+
+  const wordCount = body.split(/\s+/).length;
+  const readingTime = Math.ceil(wordCount / 200); // assuming 200 wpm
+  
+  const dateObj = new Date(date);
+  const dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
   const cssLinksHtml = cssLinks.map(href => `<link rel="stylesheet" href="${href}">`).join('\n  ');
   
@@ -203,6 +209,18 @@ export function generateBlogHTML(entry, cssLinks = []) {
       margin-bottom: 1rem;
       color: #111827;
     }
+    .blog-meta {
+      font-size: 1.25rem;
+      color: #52525b;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .separator {
+      font-weight: bold;
+    }
     ${markdownCss}
     ${highlightCss}
   </style>
@@ -221,6 +239,11 @@ export function generateBlogHTML(entry, cssLinks = []) {
     <a href="/blogs" class="back-link">← Back to Blogs</a>
     <div class="article-container">
       <h1 class="article-title">${title}</h1>
+      <div class="blog-meta">
+        <span>Written on ${dateStr}</span>
+        <span class="separator">•</span>
+        <span class="reading-time">~${readingTime} minute read</span>
+      </div>
       <article class="markdown-body">
         ${content}
       </article>

@@ -5,7 +5,6 @@ date: "2025-12-07"
 unix_time: 1765101436
 tags: ["devlog", "cipherfs"]
 ---
-###### Written on 2025 December 7
 
 ## The background
 It's weird to say this myself, but I'm the "computer guy" in my class. One of the most common things I do is help my classmates and teachers put their presentations, videos, and documents on the class computer, so they can show it on the projector. Most of the time, they just message me a file or URL and I transfer it via Google Drive or something else.

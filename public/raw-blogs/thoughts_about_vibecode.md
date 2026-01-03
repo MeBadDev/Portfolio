@@ -7,7 +7,6 @@ date: 2025-11-10
 unix_time: 1762781688
 ---
 
-###### Written on 2025 November 10
 "Vibe coding." This term was coined by Andrej Karpathy, who wrote in a [X post](https://x.com/karpathy/status/1886192184808149383):
 > There's a new kind of coding I call "vibe coding", where you fully give in to the vibes, embrace exponentials, and forget that the code even exists. 
 

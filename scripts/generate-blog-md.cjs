@@ -1,4 +1,4 @@
-// Gennerate a markdown blog template with all metadatas
+// Generate a markdown blog template with all metadatas
 
 const readline = require('readline');
 const fs = require('fs');

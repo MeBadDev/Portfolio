@@ -5,7 +5,6 @@ description: This post explains how my markdown to HTML post system(which I used
 tags: technical
 date: 2024-09-20
 ---
-###### Written on 2024 September 20
 
 I've built a system to convert Markdown files into HTML! In fact, this page you're seeing right now is dynamically generated from a markdown file. Let me walk you through some common questions people ask about how it works!
 

@@ -5,7 +5,6 @@ date: "2025-12-02"
 unix_time: 1764681075
 tags: ["linux", "opinion"]
 ---
-###### Written on 2025 December 2
 ![e](/blog-assets/software-elitism-is-dumb/dump-posting-about-the-linux-community.webp)
 
 

@@ -5,7 +5,6 @@ description: Bookmarklets can be a great tool for things like open page that doe
 tags: bookmarklet,fun,technical
 date: 2024-09-30
 ---
-###### Written on 2024 September 30
 
 ## Bookmarklets are pretty cool.
 There's a lot you can do with them, from interactive bookmarks to useful tools that help you get things done easier, however, there's also potential for creating bookmarklets that are purely designed to annoy users. In this article, Ill show how I made what might be the most irritating bookmarklet ever conceived. Why? because why not lol.
