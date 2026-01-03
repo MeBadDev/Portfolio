@@ -16,7 +16,7 @@ TBH, I wasn't sure if anyone would be interested in it. My site is a simple and 
 The repository contains the full source code of my website, including:
 - A blog system that converts markdown files to HTML on build time
 - A [tetr.io](https://tetr.io) stats viewer that shows my game stats because why not
-- A [404 page](https://mebaddev.net/#/meaning-of-life)
+- A [404 page](https://mebaddev.net/meaning-of-life)
 - A cool parallax mountain thing
 - A pixelated look
 - And of course, a messy codebase that I'm planning to refactor soon

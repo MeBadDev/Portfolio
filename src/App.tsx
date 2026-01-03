@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import FirstPanel from './components/FirstPanel';
 import SecondPanel from './components/SecondPanel';
 import ThirdPanel from './components/ThirdPanel';
@@ -23,14 +23,14 @@ function HomePage() {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blogs" element={<><Topbar /><BlogsPage /></>} />
         <Route path="/404" element={<NotFoundPage />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

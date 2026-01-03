@@ -3,7 +3,7 @@ export interface BlogMeta {
   title: string;
   description: string;
   tags: string[];
-  path: string;      // /blogs/003_annoying_bookmarklet.md
+  path: string;      // /raw-blogs/003_annoying_bookmarklet.md
   date: string;      // YYYY-MM-DD
   unix_time?: number; // unix timestamp in seconds
 

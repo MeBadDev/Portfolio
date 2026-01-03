@@ -12,8 +12,9 @@ So far, it features:
 
 
 ## Writing blog posts
-All blog posts are written in markdown and stored in `src/blogs/`. To create a new blog post, run `npm run generate-blog` and follow the instructions. This will create a new markdown file with the appropriate metadata template for you to fill in.
+All blog posts are written in markdown and stored in `public/raw-blogs/`. To create a new blog post, run `npm run generate-blog` and follow the instructions. This will create a new markdown file with the appropriate metadata template for you to fill in.
 
+The blog list (and the blog itself) will be avaliable under `/blog/` and `blog/[blog-]
 ## Building the site
 To build the site, run `npm run build`. This will compile the typescript files,
 convert markdown files to HTML, and generate the RSS feed.

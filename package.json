@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "bun scripts/generate-blog-manifest.cjs",
+    "predev": "bun scripts/generate-blog-manifest.js",
     "dev": "vite --host",
     "prebuild": "echo prebuild",
-    "build": "tsc -b && vite build && bun scripts/generate-rss.cjs && bun scripts/generate-blog-manifest.cjs && bun scripts/generate-blog-html.cjs",
+    "build": "tsc -b && vite build && bun scripts/generate-rss.js && bun scripts/generate-blog-manifest.js && bun scripts/generate-blog-html.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-blog": "bun scripts/generate-blog-md.cjs"

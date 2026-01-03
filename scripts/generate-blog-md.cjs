@@ -35,7 +35,7 @@ tags: [${tagsArray.map(t => `"${t}"`).join(', ')}]
 ${slug ? `slug: "${slug}"\n` : ''}---`;
 
     // Write to file
-    const outputPath = `./public/blogs/${filename}`;
+    const outputPath = `./public/raw-blogs/${filename}`;
     fs.writeFileSync(outputPath, content, 'utf8');
     console.log(`Blog template generated: ${outputPath}`);
 
