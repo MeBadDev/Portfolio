@@ -31,7 +31,7 @@ Eventually, I decided to eyeball the dimensions and design the case on my own. A
 
 Some parts of the guide, like the suggestion to "round the edges" after exporting the case, made no sense to me. I submitted a few pull requests to fix some of the guide. I'm honestly quite surprised that these errors are still up there with how many people have used the guide already, but [they merged my PR quickly](https://github.com/hackclub/blueprint/pull/167) so that's really cool.
 
-I'm still really worried about the case, because a day after finishing my macropad and submitting for review, a user on Hack Club slack pointed out that there's a mistake in the guide which causes incorrect dimensions. I guided them to help fixing it by submitting a PR, but I'm still not sure if my case is correct. I guess I'll find out when I get the parts. (the hackclub folks are on holiday currently so I still haven't recieved the parts yet.)
+I'm still really worried about the case, because a day after finishing my macropad and submitting for review, a user on Hack Club slack pointed out that there's a mistake in the guide which causes incorrect dimensions. I guided them to help fixing it by submitting a PR, but I'm still not sure if my case is correct. I guess I'll find out when I get the parts. (At the time of writing, the Hack Club team is on holiday so I still haven't recieved the parts yet.)
 
 ![Slack message about the mistake in the guide](/blog-assets/i-tried-doing-hardware/slack-conversation.png)
 
