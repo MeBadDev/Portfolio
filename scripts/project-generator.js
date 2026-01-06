@@ -18,13 +18,33 @@ if (import.meta.url) {
 
 const MARKDOWN_CSS_PATH = path.resolve(ROOT_DIR, 'src/markdown.css');
 const HIGHLIGHT_CSS_PATH = path.resolve(ROOT_DIR, 'node_modules/highlight.js/styles/github.css');
+const PROJECTS_DB = path.resolve(ROOT_DIR, 'public/projects/projects.json');
 
 export function getProjects(projectsDir) {
   if (!fs.existsSync(projectsDir)) return [];
 
-  const projectFolders = fs.readdirSync(projectsDir, { withFileTypes: true })
+  let projectFolders = [];
+  
+  // Try to load order from DB
+  if (fs.existsSync(PROJECTS_DB)) {
+      try {
+          projectFolders = JSON.parse(fs.readFileSync(PROJECTS_DB, 'utf8'));
+      } catch (e) {
+          console.error("Failed to parse projects.json, falling back to directory scan", e);
+      }
+  }
+
+  // Get actual folders on disk
+  const diskFolders = fs.readdirSync(projectsDir, { withFileTypes: true })
     .filter(d => d.isDirectory())
     .map(d => d.name);
+
+  // Merge: Use DB order, then append any new folders found on disk that aren't in DB
+  const missingFolders = diskFolders.filter(f => !projectFolders.includes(f));
+  projectFolders = [...projectFolders, ...missingFolders];
+
+  // Filter out any folders from DB that don't exist on disk anymore
+  projectFolders = projectFolders.filter(f => diskFolders.includes(f));
 
   const projects = projectFolders.map(folderName => {
     const projectPath = path.join(projectsDir, folderName);

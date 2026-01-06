@@ -10,12 +10,15 @@
     "build": "tsc -b && vite build && bun scripts/generate-rss.js && bun scripts/generate-blog-manifest.js && bun scripts/generate-blog-html.js && bun scripts/generate-project-manifest.js && bun scripts/generate-project-html.js",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-blog": "bun scripts/generate-blog-md.cjs"
+    "generate-blog": "bun scripts/generate-blog-md.cjs",
+    "manage": "bun scripts/manage.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@tailwindcss/vite": "^4.0.4",
     "highlight.js": "^11.11.1",
+    "inquirer": "^9.0.0",
+    "inquirer-autocomplete-prompt": "^3.0.1",
     "marked": "^17.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -30,12 +33,16 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "editor": "^1.0.0",
     "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
     "gray-matter": "^2.0.1",
     "js-yaml": "^4.1.1",
+    "open": "^11.0.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
     "vite": "^6.1.0"
