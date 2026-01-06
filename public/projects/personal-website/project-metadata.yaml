@@ -1,0 +1,7 @@
+title: "Personal Website"
+summary: "You are looking at it right now!"
+description: |
+  This is my personal website! It is built with React, Vite, TypeScript and TailwindCSS. The source code is avaliable on GitHub. 
+tags: ["React", "Vite", "TypeScript", "TailwindCSS"]
+status: "Ongoing"
+repoLink: "https://github.com/mebaddev/portfolio"

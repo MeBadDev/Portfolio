@@ -1,0 +1,10 @@
+title: "CipherFS"
+summary: "A secure, encrypted 'fileserver' with no backend with a public Github Repository used as storage."
+description: |
+  CipherFS is an open source web app that allows user to securely store and share links. It does not have a backend server. Instead, it uses a public GitHub repository as storage. All data is encrypted on the client side using AES-256-GCM before being uploaded to the repository. This way, even if someone scrapes the repository, they won't be able to access the files without the key.
+
+  Since it is just a static web app with no backend, you can self host it anywhere you want easily completely for free!
+tags: ["File Storage", "Security", "Open Source"]
+status: "completed"
+repoLink: "https://github.com/mebaddev/cipherfs"
+demoLink: "https://cipher-fs.mebaddev.net"

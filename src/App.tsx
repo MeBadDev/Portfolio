@@ -7,6 +7,8 @@ import BlogsPage from './pages/BlogsPage';
 import Topbar from './components/Topbar';
 import NotFoundPage from './pages/404';
 
+import ProjectsPage from './pages/ProjectsPage';
+
 function HomePage() {
   return (
     <>
@@ -26,7 +28,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blogs" element={<><Topbar /><BlogsPage /></>} />
+        <Route path="/blogs" element={<><Topbar /><BlogsPage /><Footer /></>} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/404" element={<NotFoundPage />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>

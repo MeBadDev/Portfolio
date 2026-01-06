@@ -4,7 +4,7 @@ import type { BlogMeta } from '../types/blog';
 
 function BlogListItem({ blog }: { blog: BlogMeta }) {
   return (
-  <div id={blog.slug} className="flex flex-col border-4 bg-white text-zinc-900 p-6 gap-3 border-black border-6">
+  <div id={blog.slug} className="flex flex-col bg-white text-zinc-900 p-6 gap-3 border-black border-6">
       <div className="flex items-center gap-4">
         <div className="flex flex-col">
           <h3 className="text-3xl font-bold">{blog.title}</h3>
