@@ -11,6 +11,21 @@ export default function blogPlugin() {
   return {
     name: 'vite-plugin-blog',
     configureServer(server) {
+      server.watcher.add(BLOGS_DIR);
+
+      const handleFileChange = (file) => {
+        if (file.startsWith(BLOGS_DIR) && file.endsWith('.md')) {
+          server.ws.send({
+            type: 'full-reload',
+            path: '*'
+          });
+        }
+      };
+
+      server.watcher.on('change', handleFileChange);
+      server.watcher.on('add', handleFileChange);
+      server.watcher.on('unlink', handleFileChange);
+
       server.middlewares.use(async (req, res, next) => {
         if (req.url === '/blogs.manifest.json') {
           try {
@@ -35,8 +50,11 @@ export default function blogPlugin() {
 
             if (entry) {
               const fullHtml = generateBlogHTML(entry);
+              // Inject Vite client for HMR support
+              const transformedHtml = await server.transformIndexHtml(req.url, fullHtml);
+              
               res.setHeader('Content-Type', 'text/html');
-              res.end(fullHtml);
+              res.end(transformedHtml);
               return;
             }
           } catch (e) {
