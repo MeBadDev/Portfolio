@@ -1,5 +1,5 @@
 ---
-title: "Admin panel"
+title: "Project release!"
 date: "2025-10-6"
 time-spent: 0.5
 order: 7
