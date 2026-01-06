@@ -2,7 +2,7 @@
 title: "Admin panel"
 date: "2025-10-6"
 time-spent: 1
-order: 6
+order: 5
 ---
 I made a simple admin panel for CipherFS to manage groups and resources. It asks for a PAT to push changes to the GitHub repository. The PAT is not stored anywhere. It's only used for the current session.
 

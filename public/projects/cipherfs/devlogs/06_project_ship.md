@@ -2,7 +2,7 @@
 title: "Project release!"
 date: "2025-10-6"
 time-spent: 0.5
-order: 7
+order: 6
 ---
 I think that's it! CipherFS is now usable enough for me. I've open sourced the entire project on GitHub under the GPL-2.0 License, so feel free to check it out. 
 
