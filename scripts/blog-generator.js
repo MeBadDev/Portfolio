@@ -232,6 +232,7 @@ export function generateBlogHTML(entry, cssLinks = []) {
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/blogs">Blog</a>
+        <a href="/projects">Projects</a>
       </div>
     </div>
   </nav>
