@@ -2,7 +2,7 @@
 title: "Project page"
 date: "2026-1-6"
 time-spent: 1.5
-order: 6
+order: 1
 ---
 I made a project page for my personal website! It displays all my projects in a nice grid layout (or at least, I hope it will. I haven't filled it with projects yet).
 
