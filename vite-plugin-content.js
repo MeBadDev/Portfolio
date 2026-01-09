@@ -1,7 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getBlogEntries, generateManifest, generateBlogHTML } from './scripts/blog-generator.js';
-import { getProjects, generateProjectManifest, generateProjectHTML } from './scripts/project-generator.js';
+import { getBlogEntries, generateManifest, generateBlogHTML } from './scripts/blog-generator.tsx';
+import { getProjects, generateProjectManifest, generateProjectHTML } from './scripts/project-generator.tsx';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -70,7 +70,7 @@ export default function blogPlugin() {
             const entry = entries.find(e => e.slug === slug);
 
             if (entry) {
-              const fullHtml = generateBlogHTML(entry);
+              const fullHtml = generateBlogHTML(entry, ['/src/index.css']);
               const transformedHtml = await server.transformIndexHtml(req.url, fullHtml);
               res.setHeader('Content-Type', 'text/html');
               res.end(transformedHtml);
@@ -90,7 +90,7 @@ export default function blogPlugin() {
                 const project = projects.find(p => p.slug === slug);
 
                 if (project) {
-                    const fullHtml = generateProjectHTML(project);
+                    const fullHtml = generateProjectHTML(project, ['/src/index.css']);
                     const transformedHtml = await server.transformIndexHtml(req.url, fullHtml);
                     res.setHeader('Content-Type', 'text/html');
                     res.end(transformedHtml);

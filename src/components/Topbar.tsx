@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+// @ts-ignore
+import React from 'react'; //without this line the dev server won't start
 
 export default function Topbar() {
   return (

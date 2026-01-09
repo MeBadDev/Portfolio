@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getProjects, generateProjectManifest } from './project-generator.js';
+import { getProjects, generateProjectManifest } from './project-generator.tsx';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
