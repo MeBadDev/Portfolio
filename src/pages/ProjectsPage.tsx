@@ -49,7 +49,7 @@ function ProjectCard({ project }: { project: Project }) {
          </div>
 
          <div className="mt-4 flex flex-wrap gap-3 pt-4 border-t-2 border-zinc-200">
-            <a href={project.path} className="px-4 py-2 bg-black text-white font-bold hover:bg-zinc-800 border-2 border-transparent transition-colors">
+            <a href={project.path} className={`px-4 py-2 bg-black text-white font-bold hover:bg-zinc-800 border-2 border-transparent transition-colors ${project.devlogCount === 0 ? "hidden" : ""}`}>
                Devlogs ({project.devlogCount})
             </a>
             {project.repoLink && (
