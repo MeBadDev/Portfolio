@@ -1,0 +1,17 @@
+title: Untitled Mining Game
+summary: A mining simulator game built for Hack Club Campfire
+description: >
+  A mining simulator game built for the Hack Club Campfire game jam! It's my
+  first IRL game jam, and I enjoy it a lot. I've met some really awesome people
+  and had a lot of fun together.
+
+
+  The game jam's theme is **Beneath the surface**, so we just did a mining game
+  because that's the first thought that came into our (or at least, my) mind.
+
+
+  It's built using Godot!
+tags: [game,gamejam]
+status: Ongoing
+repoLink: 'https://github.com/mebaddev/untitled-mining-game'
+demoLink: 'https://mebaddev.itch.io/untitled-mining-game'
