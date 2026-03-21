@@ -8,6 +8,7 @@ import Topbar from './components/Topbar';
 import NotFoundPage from './pages/404';
 
 import ProjectsPage from './pages/ProjectsPage';
+import CoolPersons from './pages/CoolPersons';
 
 function HomePage() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/404" element={<NotFoundPage />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
+        <Route path="/cool-person" element={<CoolPersons />} />
       </Routes>
     </BrowserRouter>
   );

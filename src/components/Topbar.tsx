@@ -8,7 +8,7 @@ export default function Topbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold">mebaddev.net</Link>
         <div className="flex gap-6 text-xl">
-          <Link to="/" className="hover:underline">Home</Link>
+          <Link to="/cool-person" className="hover:underline">Cool Persons</Link>
           <Link to="/blogs" className="hover:underline">Blog</Link>
           <Link to="/projects" className="hover:underline">Projects</Link>
         </div>
