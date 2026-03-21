@@ -15,7 +15,7 @@ type PersonCardProps = {
 function PersonCard({ name, description, imageUrl, link }: PersonCardProps) {
     return (
         <div className="flex flex-col bg-white text-zinc-900 p-6 gap-3 border-black border-6">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-4">
                 {imageUrl && (
                     <img 
                         src={imageUrl} 
